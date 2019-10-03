@@ -1,0 +1,19 @@
+Username: at least 4 characters, max 20
+Password: at least 8 characters, 1 capital letter, at least 1 lowercase, at least 1 number
+ConfirmPass: matches password
+email: standard email validation
+
+terms of service agreement checkbox
+
+
+------------------
+fetch api
+jsonplaceholder.com
+visualize json with div blocks
+after id 10 and less
+promise, async, await, serviece workers
+
+Todos
+div with title
+if completed title is green, otherwise red
+limit 10
