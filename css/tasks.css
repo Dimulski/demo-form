@@ -1,0 +1,30 @@
+#task-field {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    list-style: none;
+    flex: 0 0 30%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.completed {
+    border: 2px solid #2AA73F;
+}
+
+.in-progress {
+    border: 2px solid #DF3449;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
