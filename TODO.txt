@@ -17,3 +17,23 @@ Todos
 div with title
 if completed title is green, otherwise red
 limit 10
+
+
+------------------
+Topics:
+Vue documentation
+Vuex
+Working with json
+Git- branches and merging
+Server side rendering and Nuxt- basics
+javascript algorithms
+SOLID
+Design patterns- most popular, basics
+Data structures
+JWT
+Dependency injection
+Service worker
+Databases- relational and non-relational- basics
+Sessions- basics
+Cookies- basics
+Docker- basics
