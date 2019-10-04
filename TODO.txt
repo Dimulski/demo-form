@@ -16,6 +16,7 @@ promise, async, await, serviece workers
 Todos
 div with title
 if completed title is green, otherwise red
+<<<<<<< HEAD
 limit 10
 
 
