@@ -1,147 +1,147 @@
 .main-container {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    padding: 35px;
-    -webkit-border-radius: 2px 6px 6px;
-    border-radius: 2px 6px 6px;
-    background: #fff;
-    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.25);
-    box-shadow: 0 3px 20px rgba(0,0,0,.25);
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding: 35px;
+	-webkit-border-radius: 2px 6px 6px;
+	border-radius: 2px 6px 6px;
+	background: #fff;
+	-webkit-box-shadow: 0 3px 9px rgba(0,0,0,.25);
+	box-shadow: 0 3px 20px rgba(0,0,0,.25);
 
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .gridbox {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    flex-wrap: wrap;
-    grid-gap: 10px;
-    padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	flex-wrap: wrap;
+	grid-gap: 10px;
+	padding: 10px;
 }
 
 .photo-card {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    position: relative;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
 }
 
 .photo-img-top {
-    width: 100%;
-    border-top-left-radius: calc(.25rem + 1px);
-    border-top-right-radius: calc(.25rem + 1px);
-    opacity:1;
-    transition:opacity 1.0s ease-in;
+	width: 100%;
+	border-top-left-radius: calc(.25rem + 1px);
+	border-top-right-radius: calc(.25rem + 1px);
+	opacity:1;
+	transition:opacity 1.0s ease-in;
 }
 
 .hidden {
-    opacity: 0;
+	opacity: 0;
 }
 
 @media (min-width: 1200px) {
-    .main-container {
-        max-width: 1180px;
-    }
+	.main-container {
+		max-width: 1180px;
+	}
 }
     
 @media (max-width: 1200px) {
-    .main-container {
-        max-width: 940px;
-    }
+	.main-container {
+		max-width: 940px;
+	}
 
-    .gridbox {
-        grid-template-columns: repeat(3, auto);
-    }
+	.gridbox {
+		grid-template-columns: repeat(3, auto);
+	}
 }
 
 @media (max-width: 992px) {
-    .main-container {
-        max-width: 730px;
-    }
+	.main-container {
+		max-width: 730px;
+	}
 
-    .gridbox {
-        grid-template-columns: repeat(3, auto);
-    }
+	.gridbox {
+		grid-template-columns: repeat(3, auto);
+	}
 }
 
 @media (max-width: 768px) {
-    .main-container {
-        max-width: 570px;
-    }
+	.main-container {
+		max-width: 570px;
+	}
 
-    .gridbox {
-        grid-template-columns: repeat(2, auto);
-    }
+	.gridbox {
+		grid-template-columns: repeat(2, auto);
+	}
 }
 
 @media (max-width: 576px) {
-    .main-container {
-        max-width: 540px;
-    }
+	.main-container {
+		max-width: 540px;
+	}
 
-    .gridbox {
-        grid-template-columns: auto;
-    }
+	.gridbox {
+		grid-template-columns: auto;
+	}
 }
 
 .photo-body {
-    padding: 1.25rem;
+	padding: 1.25rem;
 }
 
 .photo-img-top {
     width: 100%;
-    border-top-left-radius: calc(.25rem + 1px);
-    border-top-right-radius: calc(.25rem + 1px);
+	border-top-left-radius: calc(.25rem + 1px);
+	border-top-right-radius: calc(.25rem + 1px);
 }
 
 .photo-title, h1 {
-    font-family: sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
+	font-family: sans-serif;
+	font-weight: 500;
+	line-height: 1.2;
 }
 
 .photo-title {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 25px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 25px;
 }
 
 .section-tab {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	width: 100%;
+	justify-content: center;
 }
 
 .section-tab > li {
-    border-radius: 20px;
-    background: lavender;
-    padding: 3px 15px 3px 15px;
-    margin-left: 10px;
-    margin-bottom: 9px;
-    border: 2px solid lightgray;
+	border-radius: 20px;
+	background: lavender;
+	padding: 3px 15px 3px 15px;
+	margin-left: 10px;
+	margin-bottom: 9px;
+	border: 2px solid lightgray;
 }
 
 .section-tab > li > a:hover {
-    text-decoration: none;
-    transition: 1s;
+	text-decoration: none;
+	transition: 1s;
 }
 
 .active {
-    background: lightblue !important;
+	background: lightblue !important;
 }

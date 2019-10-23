@@ -1,5 +1,5 @@
 #message {
-    height: 150px;
+  height: 150px;
 }
 
 .iti__flag {background-image: url("../bundle/intl-tel-input/flags.png");}
@@ -9,7 +9,7 @@
 }
 
 .iti {
-    display: block;
+  display: block;
 }
 
 #message-sent {

@@ -1,45 +1,45 @@
 get12random = (elements) => {
-    let selected = [];
-    while (selected.length < 12) {
-        let randomElement = Math.floor(Math.random() * elements.length + 1);
-        if (selected.indexOf(randomElement) === -1) {
-            selected.push(randomElement);
-        }
+  let selected = [];
+  while (selected.length < 12) {
+    let randomElement = Math.floor(Math.random() * elements.length + 1);
+    if (selected.indexOf(randomElement) === -1) {
+      selected.push(randomElement);
     }
+  }
 
-    return selected;
+  return selected;
 };
 
 const lazyLoad = target => {
-    const io = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const url = entry.target.children[0].dataset.url;
-                entry.target.children[0].src = url;
-                
-                entry.target.children[0].classList.remove("hidden");
-                observer.disconnect();
-            }
-        });
-    });
+  const io = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const url = entry.target.children[0].dataset.url;
+        entry.target.children[0].src = url;
 
-    io.observe(target);
+        entry.target.children[0].classList.remove("hidden");
+        observer.disconnect();
+      }
+    });
+  });
+
+  io.observe(target);
 };
 
 const photosField = document.getElementById("photos-field");
 get12random([...Array(50).keys()]).forEach(pictureId => {
-    axios.get(`https://jsonplaceholder.typicode.com/photos/${pictureId}`)
+  axios.get(`https://jsonplaceholder.typicode.com/photos/${pictureId}`)
     .then(response => {
-        const photo = response.data;
-        const photoCard = document.createElement("div");
-            photoCard.className = "photo-card";
-            photoCard.innerHTML =
-                `<img src="../img/600.png" data-url='${photo.url}' class="photo-img-top hidden" alt="${photo.title}">
+      const photo = response.data;
+      const photoCard = document.createElement("div");
+      photoCard.className = "photo-card";
+      photoCard.innerHTML =
+        `<img src="../img/600.png" data-url='${photo.url}' class="photo-img-top hidden" alt="${photo.title}">
                 <div class="photo-body">
                     <h5 class="photo-title">${photo.title}</h5>
                 </div>`;
-            photosField.appendChild(photoCard);
-            lazyLoad(photoCard);
+      photosField.appendChild(photoCard);
+      lazyLoad(photoCard);
     });
 });
 
